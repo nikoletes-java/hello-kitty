@@ -13,7 +13,12 @@
 /*
 
 .fazer parte externa da melody
+
 .fazer parte externa da mimmy
+
+.arrumar header pra celular (o h1 ta muito grande, talevz arrumei o navpra cell)
+
+.arrumar main pra celular (a partir do mimmy da bugado)
 
 
 */
@@ -24,12 +29,12 @@
     --cor3: #F29BBB;
     --cor4: #ffcee0;
     --cor5: #F2F2F2; 
-    --cor6: #0D0D0D;
-    --cor7: #222222;
-    --cor8: #000000;
-    --cor9: #2d2d2d;
-    --cor10: #131313;
     --cor11: #5f5f5f;
+    --cor9: #2d2d2d;
+    --cor7: #222222;
+    --cor10: #131313;
+    --cor6: #0D0D0D;
+    --cor8: #000000;
 
     --fonte-kitty: 'Kitty', 'Titan One', cursive;
     --fonte-destaque: 'Concert One', cursive;
@@ -58,6 +63,7 @@ header > h1 {
     padding-left: 50px;
     padding-top: 7px;
     font-size: 5.4em;
+    width: 100%;
 }
 
 nav {
