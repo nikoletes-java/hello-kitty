@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* CSS Document */
+
+/*
+
+.fazer parte externa da melody
+.fazer parte externa da mimmy
+
+
+*/
+
+:root {
+    --cor1: #9b375c;
+    --cor2: #F2528D;
+    --cor3: #F29BBB;
+    --cor4: #ffcee0;
+    --cor5: #F2F2F2; 
+    --cor6: #0D0D0D;
+    --cor7: #222222;
+    --cor8: #000000;
+    --cor9: #2d2d2d;
+    --cor10: #131313;
+    --cor11: #5f5f5f;
+
+    --fonte-kitty: 'Kitty', 'Titan One', cursive;
+    --fonte-destaque: 'Concert One', cursive;
+    --fonte-normal: 'Comfortaa', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor3);
+    font-family: var(--fonte-normal);
+}
+
+header {
+    background-color: var(--cor6);
+    width: 100%;
+    min-height: 200px;
+}
+
+header > h1 {
+    font-family: var(--fonte-kitty);
+    color: var(--cor5);
+    padding-left: 50px;
+    padding-top: 7px;
+    font-size: 5.4em;
+}
+
+nav {
+    margin-top: 50px;
+    margin-left: 45px;
+    padding-bottom: 30px;
+    display: flex;
+    width: 700px;
+}
+
+nav > a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--fonte-normal);
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+nav > .menu-personagens > a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--fonte-normal);
+    padding: 5px;
+    border-radius: 3px 3px 0px 0px;
+    margin-right: 20px;
+}
+
+nav > a:hover {
+    color: var(--cor2);
+    background-color: var(--cor7);
+    font-size: 19px;
+    transition-duration: 0.4s;
+    text-decoration: underline;
+}
+
+nav > .menu-personagens:hover > a {
+    color: var(--cor2);
+    background-color: var(--cor7);
+    font-size: 19px;
+    transition-duration: 0.4s;
+    text-decoration: underline;
+}
+
+.menu-personagens {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu-personagens {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: var(--cor7);
+    width: 100%;
+    padding: 15px;
+    border-radius: 0px 3px 3px 3px;
+
+    display: none;
+    z-index: 1000;
+}
+
+.sub-menu-personagens a {
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 1px;
+}
+
+.sub-menu-personagens li {
+    padding-bottom: 8px;
+}
+
+.sub-menu-personagens > ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.sub-menu-personagens a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+    background-color: var(--cor10);
+    transition: 0.5s;
+}
+
+.menu-personagens:hover .sub-menu-personagens {
+    display: block;
+    transition: smooth;
+}
+
+#linha-nav {
+    background-color:var(--cor11);
+    width: 1.5px;
+    height: 30px;
+    margin: 20px 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+#back-nav {
+    margin-left: 20px;
+}
+
+main {
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 200px;
+    max-width: 1000px;
+    background-color: var(--cor5);
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.46);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 { 
+    font-family: var(--fonte-destaque);
+    color: var(--cor1);
+    padding: 0.7px;
+    margin-bottom: 20px;
+    font-size: 2.3em;
+}
+
+main h2 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor1);
+    font-size: 2em;
+    padding: 0.7px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 600px;
+    
+}
+
+main #h2-melody {
+    margin-top: 0px;
+    width: 500px;
+}
+
+main p {
+    font-family: var(--fonte-normal);
+    color: var(--cor6);
+    text-indent: 30px;
+    line-height: 1.75em;
+    margin-bottom: 20px;    
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;
+}
+
+main #text-mimmy {
+    max-width: 61vw;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+main #text-melody {
+    max-width: 65vw;
+    width: 100%;
+    margin-bottom: 105px;
+}
+
+main a.externo {
+    text-decoration: none;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    padding: 2px;
+    border-radius: 1px;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
+
+main a.externo:hover {
+    text-decoration: underline;
+}
+
+aside > ul {
+    margin-left: 40px;
+    color: var(--cor5);
+    line-height: 2em;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+a.externo::after { 
+    content: '\00A0\1F517';
+}
+
+img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+img:hover {
+    transform: scale(1.02);
+    transition-duration: 0.3s;
+}
+
+#img-family {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#img-mimmy {
+    max-width: 370px;
+    width: 100%;
+    float: right;
+    margin: 0;
+}
+
+#img-melody {
+    max-width: 270px;
+    width: 100%;
+    float: right;
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--cor9);
+    margin: 40px 0;
+}
