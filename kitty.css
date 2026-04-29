@@ -201,7 +201,7 @@ main h2 {
     padding: 0.7px;
     margin-bottom: 20px;
     margin-top: 50px;
-    width: 600px;
+    width: 100%;
     
 }
 
@@ -222,15 +222,13 @@ main p {
 }
 
 main #text-mimmy {
-    max-width: 61vw;
     width: 100%;
     margin-bottom: 50px;
 }
 
 main #text-melody {
-    max-width: 65vw;
     width: 100%;
-    margin-bottom: 105px;
+    margin-bottom: 200px;
 }
 
 main a.externo {
